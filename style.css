@@ -1,0 +1,668 @@
+/* background */
+body {
+  background: repeating-linear-gradient(
+      45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #192434 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #192434 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #192434 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #192434 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #192434 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #192434 0 calc(300% / 13)
+      )
+      30px 30px,
+    repeating-linear-gradient(
+      -45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #192434 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #192434 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #192434 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #192434 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #192434 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #192434 0 calc(300% / 13)
+      )
+      30px 30px #22323f;
+  background-size: 60px 60px;
+}
+
+/* fonts */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* all */
+
+html {
+  width: 100%;
+}
+
+.drop {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #171f2c;
+  color: #d9e4ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+}
+
+.header {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.smallHeader {
+  font-size: 1.3rem;
+  color: #395b76;
+  margin-bottom: 0;
+}
+
+/* navbar */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22323f;
+  color: #d9e4ec;
+  font-size: 1.1rem;
+  width: 100%;
+  /* width: max-content; -----MOBILE---- */
+}
+
+nav h1,
+nav ul {
+  margin: 25px 0px;
+}
+
+nav > .navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar a {
+  color: #d9e4ec;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+span {
+  color: #3d79a7;
+}
+
+.navbar > ul {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a:hover {
+  transition: 300ms;
+  color: #3d79a7;
+}
+
+/* first Container */
+
+.first-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 70%;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  transition: 300ms;
+}
+
+.first-cont h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.first-cont h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.right h2 {
+  color: #b8d5ec;
+}
+
+.pfp {
+  width: 17rem;
+  border-radius: 50%;
+  border: 15px #d9e4ec solid;
+  box-shadow: 0px 15px 18px black;
+}
+
+/* Resume button */
+
+.res {
+  border-radius: 15px;
+  border: #3d79a7 1px solid;
+  transition: 300ms;
+}
+
+.res:hover {
+  background-color: #22323f;
+  transition: 300ms;
+}
+
+.res a {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: #324f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 30px;
+  transition: 300ms;
+}
+
+.res a:hover {
+  transition: 300ms;
+  color: #d9e4ec;
+  font-weight: 700;
+}
+
+.res svg {
+  width: 35px;
+  margin-right: 10px;
+}
+
+/* second Container */
+
+.second-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.second-cont p {
+  font-size: 1.3rem;
+  color: #b8d5ec;
+  margin-top: 0;
+}
+
+.skills {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+  transition: 300ms;
+}
+
+.skills h1 {
+  font-size: 2rem;
+  color: #22323f;
+  text-align: center;
+  margin: 0;
+}
+
+.skill {
+  border-radius: 40px;
+  border: #395b76 solid 5px;
+  background-color: #d9e4ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 300px;
+  gap: 10px;
+  box-shadow: 0px 15px 18px black;
+  transition: 300ms;
+}
+
+.skill svg {
+  width: 90px;
+}
+
+.skill h1 {
+  font-size: 2rem;
+}
+
+.second-cont img {
+  transition: 300ms;
+  width: 10rem;
+}
+
+.skill:hover {
+  background-color: #bdd9f0;
+  color: #d9e4ec;
+  width: 390px;
+  height: 300px;
+}
+
+/* third Container */
+
+.third-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  padding-top: 6rem;
+}
+
+.exps {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exp h1 {
+  color: #b8d5ec;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.head h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.microsoft {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.google {
+  width: 2.5rem;
+  height: 1.25rem;
+}
+
+.at {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.expDesc {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* forth-cont */
+
+.forth-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  text-align: center;
+}
+
+.projects h1 {
+  margin-bottom: 0;
+}
+
+.projects ul {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.projects li {
+  text-align: left;
+}
+
+.prjct {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #d9e4ec;
+  color: #22323f;
+  border-radius: 50px;
+  border: #395b76 5px solid;
+  width: 590px;
+  /* width: auto; MOBILE */
+  padding: 25px;
+  box-shadow: 0px 15px 18px black;
+}
+
+.prjct img {
+  width: 50%;
+  border-radius: 25px;
+  border: 2.5px solid #3d79a7;
+  transition: 300ms;
+}
+
+.prjct img:hover {
+  transition: 300ms;
+  width: 80%;
+}
+
+/* fifth-cont */
+
+.fifth-cont {
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  align-items: center;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: #d9e4ec;
+  border-radius: 15px;
+  transition: 300ms;
+}
+
+.links a:hover {
+  transition: 300ms;
+  width: 100px;
+  height: 100px;
+}
+
+.links a svg {
+  width: 90px;
+}
+
+a[class="link"] svg {
+  width: 75px;
+}
+
+/* muu */
+
+.muu {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.muu a {
+  color: #324f66;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  html {
+    width: 174%;
+  }
+
+  .drop {
+    display: flex;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+
+  nav > .navbar {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: space-around;
+    gap: 230px;
+  }
+
+  #navbar {
+    padding-left: 20px;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .first-cont {
+    flex-direction: column-reverse;
+  }
+
+  .first-cont h1 {
+    font-size: 4.3rem;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .pfp {
+    width: 14rem;
+  }
+
+  .head h1 {
+    font-size: 1.8rem;
+  }
+
+  .forth-cont {
+    padding-top: 100px;
+  }
+
+  .prjct img {
+    width: 70%;
+  }
+
+  .links a svg {
+    width: 70px;
+  }
+
+  a[class="link"] svg {
+    width: 55px;
+  }
+
+  .links a {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* dropDown menu */
+
+  /* Hide the checkbox */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Menu container */
+  .menu {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: normal;
+    flex-direction: column;
+    background: #22323f85;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: auto;
+  }
+
+  label[class="menu-label"] {
+    font-size: 2rem;
+    padding-right: 20px;
+  }
+
+  .menu a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu a:hover {
+    background: #55555509;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-cont h1 {
+    font-size: 3.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .first-cont h1 {
+    font-size: 3.33rem;
+  }
+}
